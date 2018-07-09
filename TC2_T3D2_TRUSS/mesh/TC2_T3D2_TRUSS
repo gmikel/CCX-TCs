@@ -1,0 +1,19 @@
+//Description: The purpose of this script is to generate a 2-noded truss element (T3D2) for analysis in CalculiX
+//Date: July 9th, 2018
+//Analyst: Garrett M. Kelley
+
+//Define variables
+L = 1; //Bar length
+cl = 1; //Characteristic length
+
+//Define end points of bar
+Point(1) = {0,0,0,cl};
+Point(2) = {L,0,0,cl};
+
+//Define the bar axis
+Line(1) = {1,2};
+
+//Define the physical groups
+Physical Point("BOUNDARY_NODE",1) = {1};
+Physical Point("LOAD_NODE", 2) = {2};
+Physical Line("BAR", 3) = {1};

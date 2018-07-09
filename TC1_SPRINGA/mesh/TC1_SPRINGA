@@ -1,0 +1,19 @@
+//Description: Generates a single element to mesh in CalculiX.
+//Purpose: To test *SPRING card
+//Date: July 9th, 2018
+//Analyst: Garrett M. Kelley
+
+//Variables
+L = 1; //Spring length
+cl = 1; //Characteristic length
+
+//Generate points
+Point(1) = {0,0,0,cl};
+Point(2) = {L,0,0,cl};
+
+//Generate lines
+Line(1) = {1,2};
+//+
+Physical Point("END_POINTS") = {1, 2};
+//+
+Physical Curve("SPRING") = {1};

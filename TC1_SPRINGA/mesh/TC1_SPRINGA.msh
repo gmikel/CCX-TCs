@@ -1,0 +1,19 @@
+$MeshFormat
+2.2 0 8
+$EndMeshFormat
+$PhysicalNames
+2
+0 1 "END_POINTS"
+1 2 "SPRING"
+$EndPhysicalNames
+$Nodes
+2
+1 0 0 0
+2 1 0 0
+$EndNodes
+$Elements
+3
+1 15 2 1 1 1
+2 15 2 1 2 2
+3 1 2 2 1 1 2
+$EndElements

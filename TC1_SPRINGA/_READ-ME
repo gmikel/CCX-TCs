@@ -1,0 +1,5 @@
+Test Case: 2-noded, linear, spring element
+Preprocessor: GMSH 3.0/CGX 2.14
+Solver: CCX (CalculiX)
+Date: 20180709
+Description: The files contained within test the *SPRING input deck to CalculiX. They are used to generate a 2-noded, linear, spring element.

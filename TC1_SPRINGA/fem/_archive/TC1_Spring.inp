@@ -1,0 +1,14 @@
+*Heading
+ /home/garrett/Documents/test_cases/TC1_Spring/mesh/TC1_Spring.inp
+*NODE
+1, 0, 0, 0
+2, 1, 0, 0
+******* E L E M E N T S *************
+*ELEMENT, type=T3D2, ELSET=Line1
+3, 1, 2
+*ELSET,ELSET=END_POINTS
+2, 1, 
+*ELSET,ELSET=SPRING
+3, 
+*NSET,NSET=SPRING
+1, 2, 
