@@ -1,0 +1,22 @@
+*Heading
+ /home/garrett/Documents/test_cases/TC1_SPRINGA/Example_2-1/Example_2-1.inp
+*NODE
+1, 0, 0, 0
+2, 1, 0, 0
+3, 2, 0, 0
+4, 3, 0, 0
+******* E L E M E N T S *************
+*ELEMENT, type=T3D2, ELSET=Line1
+5, 1, 2
+*ELEMENT, type=T3D2, ELSET=Line2
+6, 2, 3
+*ELEMENT, type=T3D2, ELSET=Line3
+7, 3, 4
+*ELSET,ELSET=FIXED_NODES
+4, 1, 
+*ELSET,ELSET=LOADED_NODE
+3, 
+*ELSET,ELSET=SPRINGS
+6, 5, 7, 
+*NSET,NSET=SPRINGS
+2, 4, 3, 1, 
