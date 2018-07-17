@@ -1,0 +1,7 @@
+*Heading
+ /home/garrett/Documents/TEST_CASES/CCX-TCs/TC3_SPRING1/mesh/TC3_SPRING1.inp
+*NODE
+1, 0, 0, 0
+******* E L E M E N T S *************
+*ELSET,ELSET=SPRING1
+1, 
