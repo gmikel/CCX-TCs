@@ -1,0 +1,16 @@
+*Heading
+ /home/garrett/Documents/test_cases/TC2_Bar/mesh/TC2_Bar.inp
+*NODE
+1, 0, 0, 0
+2, 1, 0, 0
+******* E L E M E N T S *************
+*ELEMENT, type=T3D2, ELSET=Line1
+3, 1, 2
+*ELSET,ELSET=BOUNDARY_NODE
+1, 
+*ELSET,ELSET=LOAD_NODE
+2, 
+*ELSET,ELSET=BAR
+3, 
+*NSET,NSET=BAR
+2, 1, 
